@@ -1,0 +1,210 @@
+<ion-header>
+  <ion-navbar hideBackButton="true" color="favorite">
+    <!--<button menuToggle>-->
+      <!--<ion-icon name="menu"></ion-icon>-->
+    <!--</button>-->
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg icons-basic-page getstart" >
+
+
+  <ion-card>
+
+    <ion-card-content>
+      <h1 class="card-title" color="favorite">
+        GOSEND
+      </h1>
+      <p color="favorite">
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+      </p>
+      </ion-card-content>
+
+     <ion-slides [options]="mySlideOptions" (ionWillChange)="onSlideChangeStart($event)" auto-play="true">
+    <ion-slide>
+      <img src="img/gtb.jpg" class="slide-image"/>
+    </ion-slide>
+    <ion-slide>
+      <img src="img/shoprite.jpg" class="slide-image"/>
+
+    </ion-slide>
+    <ion-slide>
+      <img src="img/gtb.jpg" class="slide-image"/>
+
+    </ion-slide>
+    <ion-slide>
+      <img src="img/shoprite.jpg" class="slide-image"/>
+    </ion-slide>
+       <ion-slide>
+         <img src="img/gtb.jpg" class="slide-image"/>
+
+       </ion-slide>
+       <ion-slide>
+         <img src="img/shoprite.jpg" class="slide-image"/>
+       </ion-slide>
+  </ion-slides>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50><ion-icon (click)="GoSend()" ios="ios-add" md="md-add" color="favorite"></ion-icon><p color="favorite">Request</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoClean()" ios="ios-information-circle" md="md-information-circle" color="favorite"></ion-icon><p color="favorite">Enquiry</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoFood()" ios="ios-wifi" md="md-wifi"  color="favorite"></ion-icon><p color="favorite">Availability</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoPA()" ios="ios-more" md="md-more" color="favorite"></ion-icon><p color="favorite">More...</p></ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      <h1 class="card-title" color="favorite">
+        GOCLEAN
+      </h1>
+      <p color="favorite">
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+      </p>
+    </ion-card-content>
+
+    <ion-slides [options]="mySlideOptions" (ionWillChange)="onSlideChangeStart($event)" auto-play="true">
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50><ion-icon (click)="GoSend()" ios="ios-add" md="md-add" color="favorite"></ion-icon><p color="favorite">Request</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoClean()" ios="ios-information-circle" md="md-information-circle" color="favorite"></ion-icon><p color="favorite">Enquiry</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoFood()" ios="ios-wifi" md="md-wifi"  color="favorite"></ion-icon><p color="favorite">Availability</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoPA()" ios="ios-more" md="md-more" color="favorite"></ion-icon><p color="favorite">More...</p></ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      <h1 class="card-title" color="favorite">
+        GOFOOD
+      </h1>
+      <p color="favorite">
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+      </p>
+    </ion-card-content>
+
+    <ion-slides [options]="mySlideOptions" (ionWillChange)="onSlideChangeStart($event)" auto-play="true">
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50><ion-icon (click)="GoSend()" ios="ios-add" md="md-add" color="favorite"></ion-icon><p color="favorite">Request</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoClean()" ios="ios-information-circle" md="md-information-circle" color="favorite"></ion-icon><p color="favorite">Enquiry</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoFood()" ios="ios-wifi" md="md-wifi"  color="favorite"></ion-icon><p color="favorite">Availability</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoPA()" ios="ios-more" md="md-more" color="favorite"></ion-icon><p color="favorite">More...</p></ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      <h1 class="card-title" color="favorite">
+        GOPERSONAL
+      </h1>
+      <p color="favorite">
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+      </p>
+    </ion-card-content>
+
+    <ion-slides [options]="mySlideOptions" (ionWillChange)="onSlideChangeStart($event)" auto-play="true">
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50><ion-icon (click)="GoSend()" ios="ios-add" md="md-add" color="favorite"></ion-icon><p color="favorite">Request</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoClean()" ios="ios-information-circle" md="md-information-circle" color="favorite"></ion-icon><p color="favorite">Enquiry</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoFood()" ios="ios-wifi" md="md-wifi"  color="favorite"></ion-icon><p color="favorite">Availability</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoPA()" ios="ios-more" md="md-more" color="favorite"></ion-icon><p color="favorite">More...</p></ion-col>
+      </ion-row>
+
+      <!--<ion-row>-->
+      <!--<ion-col width-50><ion-icon (click)="makeCall('tel:+2348035814545')" ios="ios-call" md="md-call" color="favorite"></ion-icon></ion-col>-->
+      <!--<ion-col width-50><ion-icon (click)="openFacebook()" ios="logo-facebook" md="logo-facebook" color="favorite"></ion-icon></ion-col>-->
+      <!--<ion-col width-50><ion-icon (click)="openTwitter()" ios="logo-twitter" md="logo-twitter" color="favorite"></ion-icon></ion-col>-->
+      <!--<ion-col width-50><ion-icon (click)="openWeb()" ios="ios-link" md="md-link"  color="favorite"></ion-icon></ion-col>-->
+      <!--</ion-row>-->
+
+    </ion-grid>
+  </ion-card>
+
+</ion-content>
+
+<style>
+  .social-cards ion-col {
+    padding: 0;
+  }
+</style>
