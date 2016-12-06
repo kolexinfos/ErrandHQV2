@@ -4,14 +4,14 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
 import { TutorialPage } from '../pages/tutorial/tutorial';
-import { GocleanPage } from '../pages/goclean/goclean';
+import { GosendPage } from '../pages/gosend/gosend';
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = GocleanPage;
+  rootPage = GosendPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
