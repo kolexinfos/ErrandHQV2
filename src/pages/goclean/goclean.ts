@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+
+
 /*
   Generated class for the Goclean page.
 
@@ -12,11 +14,17 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'goclean.html'
 })
 export class GocleanPage {
+  goclean: {location?: string, size?: number, email?: string, phone?: string} = {};
+  submitted:boolean = false;
 
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
     console.log('Hello GocleanPage Page');
+  }
+
+  showMap(){
+    console.log("Location input clicked");
   }
 
 }

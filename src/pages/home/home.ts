@@ -2,9 +2,12 @@ import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
 import {InAppBrowser} from 'ionic-native';
 
-//import { WebPage } from '../web/web';
-//import { ReportPage } from '../report/report';
-//import { ContactPage } from '../contact/contact';
+import { GosendPage } from '../gosend/gosend';
+import { GofoodPage } from '../gofood/gofood';
+import { GocleanPage } from '../goclean/goclean';
+import { GopersonalPage } from '../gopersonal/gopersonal';
+
+
 
 //import {RadioPlayer} from '../../providers/radio-player/radio-player';
 
@@ -35,5 +38,74 @@ export class HomePage {
 onSlideChangeStart(event){
   //console.log("onSlideChangeStart");
 }
+
+GoSend(){
+  console.log("Go to GoSendPage");
+  this.navCtrl.setRoot(GosendPage);
+}
+
+GoSendEnquiry(){
+  console.log("Clicked GoSendEnquiry");
+}
+
+GoSendAvailability(){
+  console.log("Clicked GoSendAvailability");
+}
+
+GoSendMore(){
+ console.log("Clicked GoSendMore");
+}
+
+GoClean(){
+  console.log("Go to GoCleanPage");
+  this.navCtrl.setRoot(GocleanPage);
+}
+
+GoCleanEnquiry(){
+  console.log("Clicked GoCleanEnquiry");
+}
+
+GoCleanAvailability(){
+  console.log("Clicked GoCleanAvailability");
+}
+
+GoCleanMore(){
+  console.log("Clicked GoCleanMore");
+}
+
+GoFood(){
+  console.log("Go to GoFoodPage");
+ this.navCtrl.setRoot(GofoodPage);
+}
+
+GoFoodEnquiry(){
+ console.log("Clicked GoFoodEnquiry");
+}
+
+GoFoodAvailability(){
+  console.log("Clicked GoFoodAvailability");
+}
+
+GoFoodMore(){
+  console.log("Clicked GoFoodMore");
+}
+
+GoPersonal(){
+  console.log("Go to GoPersonalPage");
+this.navCtrl.setRoot(GopersonalPage);
+}
+
+GoPeronsalEnquiry(){
+  console.log("Clicked GoPeronsalEnquiry");
+}
+
+GoPersonalAvailability(){
+  console.log("Clicked GoPersonalAvailability");
+}
+
+GoPersonalMore(){
+  console.log("Clicked GoPersonalMore");
+}
+
 
 }

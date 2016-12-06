@@ -1,18 +1,44 @@
-<!--
-  Generated template for the Goclean page.
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>goclean</ion-title>
+  <ion-navbar color="favorite">
+    <ion-title>GoClean</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="home getstart" >
+  <ion-card>
+  <ion-list>
 
+      <form #gocleanForm="ngForm" novalidate>
+        <ion-item>
+          <ion-label floating color="favorite">Location</ion-label>
+          <ion-input (click)="showMap()" [(ngModel)]="goclean.location" name="location" type="text" #location="ngModel" ion-text color="favorite" required>
+          </ion-input>
+        </ion-item>
+        <div [hidden]="location.valid || location.untouched" >
+          <p  *ngIf="location.errors && location.errors.required" color="danger" padding-left>
+            Location is required
+          </p>          
+        </div>    
+      
+
+        <ion-item>
+          <ion-label floating color="favorite">Package Size(in grams)</ion-label>
+          <ion-input [(ngModel)]="goclean.size" name="size" type="number" #size="ngModel" ion-text color="favorite" required>
+          </ion-input>
+        </ion-item>
+        <p [hidden]="size.valid || size.untouched" color="danger" padding-left>
+          Package Size is required
+        </p>
+
+        <div padding>
+          <button ion-button (click)="goCleanRequest(gocleanForm)" type="submit" color="favorite" block>Submit</button>
+        </div>
+
+      </form>
+  </ion-list>
+  </ion-card>
 </ion-content>
