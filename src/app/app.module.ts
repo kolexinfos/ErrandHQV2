@@ -11,6 +11,7 @@ import { GocleanPage } from '../pages/goclean/goclean';
 import { GofoodPage } from '../pages/gofood/gofood';
 import { GosendPage } from '../pages/gosend/gosend';
 import { GopersonalPage } from '../pages/gopersonal/gopersonal';
+import { ModalAutocompleteItems } from '../pages/modal-autocomplete-items/modal-autocomplete-items';
 
 import { ServiceProvider } from '../providers/service-provider/service-provider';
 import { UserProvider } from '../providers/user-provider/user-provider';
@@ -27,7 +28,8 @@ import { UserProvider } from '../providers/user-provider/user-provider';
     GocleanPage,
     GofoodPage,
     GopersonalPage,
-    GosendPage
+    GosendPage,
+    ModalAutocompleteItems
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -43,7 +45,8 @@ import { UserProvider } from '../providers/user-provider/user-provider';
     GofoodPage,
     GocleanPage,
     GosendPage,
-    GopersonalPage
+    GopersonalPage,
+    ModalAutocompleteItems
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},UserProvider]
 })

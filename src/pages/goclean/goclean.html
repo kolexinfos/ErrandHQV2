@@ -9,13 +9,14 @@
 
 
 <ion-content class="home getstart" >
+  <div id="map"></div>
   <ion-card>
   <ion-list>
 
       <form #gocleanForm="ngForm" novalidate>
         <ion-item>
           <ion-label floating color="favorite">Location</ion-label>
-          <ion-input (click)="showMap()" [(ngModel)]="goclean.location" name="location" type="text" #location="ngModel" ion-text color="favorite" required>
+          <ion-input (click)="showModal()" [(ngModel)]="goclean.location" name="location" type="text" #location="ngModel" ion-text color="favorite" required>
           </ion-input>
         </ion-item>
         <div [hidden]="location.valid || location.untouched" >

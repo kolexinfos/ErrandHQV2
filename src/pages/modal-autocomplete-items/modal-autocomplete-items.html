@@ -1,10 +1,10 @@
 <ion-header>
-  <ion-navbar color="secondary">
+  <ion-navbar color="favorite">
     <ion-title>Search address</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content> 
-    <ion-searchbar 
+    <ion-searchbar color="favorite"
         [(ngModel)]="autocomplete.query" 
         [showCancelButton]="true" 
         (ionInput)="updateSearch()" 

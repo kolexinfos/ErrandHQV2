@@ -44,7 +44,7 @@ export class ModalAutocompleteItems implements OnInit{
         let config = { 
             types:  ['geocode'],
             input: this.autocomplete.query, 
-            componentRestrictions: { country: 'AR' } 
+            componentRestrictions: { country: 'NG' } 
         }
         this.acService.getPlacePredictions(config, function (predictions, status) {
             console.log('modal > getPlacePredictions > status > ', status);
