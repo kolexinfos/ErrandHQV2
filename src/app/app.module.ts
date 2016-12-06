@@ -7,6 +7,10 @@ import { HomePage } from '../pages/home/home';
 import { VerifyPage } from '../pages/verify/verify';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { SignupPage } from '../pages/signup/signup';
+import { GocleanPage } from '../pages/goclean/goclean';
+import { GofoodPage } from '../pages/gofood/gofood';
+import { GosendPage } from '../pages/gosend/gosend';
+import { GopersonalPage } from '../pages/gopersonal/gopersonal';
 
 import { ServiceProvider } from '../providers/service-provider/service-provider';
 import { UserProvider } from '../providers/user-provider/user-provider';
@@ -19,7 +23,11 @@ import { UserProvider } from '../providers/user-provider/user-provider';
     ContactPage,
     TutorialPage,
     VerifyPage,
-    SignupPage
+    SignupPage,
+    GocleanPage,
+    GofoodPage,
+    GopersonalPage,
+    GosendPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -31,7 +39,11 @@ import { UserProvider } from '../providers/user-provider/user-provider';
     ContactPage,
     TutorialPage,
     VerifyPage,
-    SignupPage
+    SignupPage,
+    GofoodPage,
+    GocleanPage,
+    GosendPage,
+    GopersonalPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},UserProvider]
 })
