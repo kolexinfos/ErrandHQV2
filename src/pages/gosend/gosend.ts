@@ -22,7 +22,7 @@ export class GosendPage {
     console.log('Hello GosendPage Page');
   }
 
-   gosend: {location?: string, size?: number, email?: string, phone?: string} = {};
+   gosend: {location?: string,weight?:string, quantity?: number, time?: string, destination?: string} = {};
   submitted:boolean = false;
 
   placesService:any;
