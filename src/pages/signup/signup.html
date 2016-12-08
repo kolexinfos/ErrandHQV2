@@ -24,10 +24,10 @@
           </ion-input>
         </ion-item>
         <div [hidden]="emailLogin.valid || emailLogin.untouched" >
-          <p  *ngIf="emailLogin.errors && emailLogin.errors.required" danger padding-left>
+          <p  *ngIf="emailLogin.errors" danger padding-left>
             Email is required
           </p>
-          <p *ngIf="emailLogin.errors && emailLogin.errors.pattern" danger padding-left>
+          <p *ngIf="emailLogin.errors" danger padding-left>
             Email is invalid
           </p>
         </div>
@@ -68,12 +68,9 @@
         </ion-input>
       </ion-item>
       <div [hidden]="email.valid || email.untouched" >
-        <p  *ngIf="email.errors && email.errors.required" danger padding-left>
+        <p  *ngIf="email.errors" danger padding-left>
           Email is required
-        </p>
-        <p *ngIf="email.errors && email.errors.pattern" danger padding-left>
-          Email is invalid
-        </p>
+        </p>        
         </div>
 
       <ion-item>

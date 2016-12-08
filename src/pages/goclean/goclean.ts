@@ -23,6 +23,7 @@ export class GocleanPage implements OnInit {
   map: any;
   markers = [];
   placedetails: any;
+  public required: any;
 
    address:any = {
         place: '',
@@ -33,6 +34,10 @@ export class GocleanPage implements OnInit {
 
   ionViewDidLoad() {
     console.log('Hello GocleanPage Page');
+  }
+
+  goCleanRequest(form){
+      
   }
 
   showMap(){

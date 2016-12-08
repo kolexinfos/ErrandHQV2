@@ -29,6 +29,7 @@ export class GosendPage {
   map: any;
   markers = [];
   placedetails: any;
+  public required:any;
 
    address:any = {
         place: '',
@@ -37,7 +38,9 @@ export class GosendPage {
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) {}
 
- 
+ goSendRequest(form){
+
+ }
 
   showMap(){
     console.log("Location input clicked");

@@ -32,10 +32,23 @@ export class SignupPage {
   signup: {username?: string, password?: string, email?: string, phone?: string} = {};
   login: {emailLogin?: string, passwordLogin?: string} = {};
   userObject:{email?: string, password?:string} = {};
+  
+  email:{errors : {
+    required?:string,
+    pattern?: string
+        }
+  };
+
+   emailLogin:{errors : {
+    required?:string,
+    pattern?: string
+        }
+  };
 
   public message:any = '';
   submitted = false;
   submitLogin = false;
+  required:any;
 
   constructor(public navCtrl: NavController,public userProvider: UserProvider) { }
 

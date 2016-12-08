@@ -12,6 +12,7 @@ import { GosendPage } from '../pages/gosend/gosend';
 })
 export class MyApp {
   rootPage = GosendPage;
+  pages:any;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

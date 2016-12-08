@@ -95,7 +95,7 @@ GoPersonal(){
 this.navCtrl.setRoot(GopersonalPage);
 }
 
-GoPeronsalEnquiry(){
+GoPersonalEnquiry(){
   console.log("Clicked GoPeronsalEnquiry");
 }
 

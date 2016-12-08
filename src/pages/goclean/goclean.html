@@ -19,11 +19,11 @@
           <ion-input (click)="showModal()" [(ngModel)]="goclean.location" name="location" type="text" #location="ngModel" ion-text color="favorite" required>
           </ion-input>
         </ion-item>
-        <div [hidden]="location.valid || location.untouched" >
+        <!--<div [hidden]="location.valid || location.untouched" >
           <p  *ngIf="location.errors && location.errors.required" color="danger" padding-left>
             Location is required
           </p>          
-        </div>    
+        </div>    -->
       
 
         <ion-item>
