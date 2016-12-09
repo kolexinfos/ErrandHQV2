@@ -1,10 +1,10 @@
 
 <ion-header>
 
-  <ion-navbar color="favorite">
+  <ion-navbar color="favorite" >
     <ion-title>GoSend</ion-title>
   </ion-navbar>
-
+  
 </ion-header>
 
 
@@ -17,7 +17,7 @@
         
         <ion-item>
           <ion-label floating color="favorite">Pickup Location</ion-label>
-          <ion-input (click)="showModal()" [(ngModel)]="gosend.location" name="location" type="text" #location="ngModel" ion-text color="favorite" required>
+          <ion-input (click)="showModal(location)" [(ngModel)]="gosend.location" name="location" type="text" #location="ngModel" ion-text color="favorite" required>
           </ion-input>
         </ion-item>
         <div [hidden]="location.valid || location.untouched" >
@@ -47,7 +47,7 @@
         
         <ion-item>
           <ion-label floating color="favorite">Destination</ion-label>
-          <ion-input (click)="showModal()" [(ngModel)]="gosend.destination" name="destination" type="text" #destination="ngModel" ion-text color="favorite" required>
+          <ion-input (click)="showModal(destination)" [(ngModel)]="gosend.destination" name="destination" type="text" #destination="ngModel" ion-text color="favorite" required>
           </ion-input>
         </ion-item>
         <div [hidden]="destination.valid || destination.untouched" >

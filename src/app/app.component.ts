@@ -11,7 +11,7 @@ import { GosendPage } from '../pages/gosend/gosend';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = GosendPage;
+  rootPage = HomePage;
   pages:any;
 
   constructor(platform: Platform) {

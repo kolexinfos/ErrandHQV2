@@ -51,7 +51,7 @@ export class GosendPage {
         this.initPlacedetails();
     }
 
-       showModal() {
+  showModal(input) {
         // reset 
         this.reset();
         // show modal|
@@ -59,8 +59,12 @@ export class GosendPage {
         modal.onDidDismiss(data => {
             console.log('page > modal dismissed > data > ', data);
             if(data){
-                this.address.place = data.description;
-                this.gosend.location = data.description;
+                if(input == 'destiination'){
+                this.gosend.destination = data.description;
+                }
+                else{
+                    this.gosend.location = data.description
+                }
                 // get details
                 this.getPlaceDetail(data.place_id);
             }                

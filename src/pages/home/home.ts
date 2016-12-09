@@ -41,7 +41,7 @@ onSlideChangeStart(event){
 
 GoSend(){
   console.log("Go to GoSendPage");
-  this.navCtrl.setRoot(GosendPage);
+  this.navCtrl.push(GosendPage);
 }
 
 GoSendEnquiry(){
@@ -58,7 +58,7 @@ GoSendMore(){
 
 GoClean(){
   console.log("Go to GoCleanPage");
-  this.navCtrl.setRoot(GocleanPage);
+  this.navCtrl.push(GocleanPage);
 }
 
 GoCleanEnquiry(){
@@ -75,7 +75,7 @@ GoCleanMore(){
 
 GoFood(){
   console.log("Go to GoFoodPage");
- this.navCtrl.setRoot(GofoodPage);
+ this.navCtrl.push(GofoodPage);
 }
 
 GoFoodEnquiry(){
@@ -92,7 +92,7 @@ GoFoodMore(){
 
 GoPersonal(){
   console.log("Go to GoPersonalPage");
-this.navCtrl.setRoot(GopersonalPage);
+this.navCtrl.push(GopersonalPage);
 }
 
 GoPersonalEnquiry(){
