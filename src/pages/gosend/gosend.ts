@@ -4,19 +4,11 @@ import { NavController, ModalController } from 'ionic-angular';
 import { ModalAutocompleteItems } from '../modal-autocomplete-items/modal-autocomplete-items';
 declare var google:any;
 
-/*
-  Generated class for the Gosend page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-gosend',
   templateUrl: 'gosend.html'
 })
-export class GosendPage {
-
-  
+export class GosendPage {  
 
   ionViewDidLoad() {
     console.log('Hello GosendPage Page');
@@ -52,6 +44,8 @@ export class GosendPage {
     }
 
   showModal(input) {
+
+      
         // reset 
         this.reset();
         // show modal|
@@ -59,14 +53,15 @@ export class GosendPage {
         modal.onDidDismiss(data => {
             console.log('page > modal dismissed > data > ', data);
             if(data){
-                if(input == 'destiination'){
+                console.log(input.name);                
+                if(input.name != 'location'){
                 this.gosend.destination = data.description;
                 }
                 else{
                     this.gosend.location = data.description
                 }
                 // get details
-                this.getPlaceDetail(data.place_id);
+                //this.getPlaceDetail(data.place_id);
             }                
         })
         modal.present();

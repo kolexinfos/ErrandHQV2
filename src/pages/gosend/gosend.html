@@ -24,7 +24,18 @@
           <p  *ngIf="location.errors" color="danger" padding-left>
             Location is required
           </p>          
-        </div>    
+        </div>   
+
+         <ion-item>
+          <ion-label floating color="favorite">Destination</ion-label>
+          <ion-input (click)="showModal(destination)" [(ngModel)]="gosend.destination" name="destination" type="text" #destination="ngModel" ion-text color="favorite" required>
+          </ion-input>
+        </ion-item>
+        <div [hidden]="destination.valid || destination.untouched" >
+          <p  *ngIf="destination.errors" color="danger" padding-left>
+            Location is required
+          </p>          
+        </div> 
       
 
         <ion-item>
@@ -45,24 +56,14 @@
           Package quantity is required
         </p>
         
-        <ion-item>
-          <ion-label floating color="favorite">Destination</ion-label>
-          <ion-input (click)="showModal(destination)" [(ngModel)]="gosend.destination" name="destination" type="text" #destination="ngModel" ion-text color="favorite" required>
-          </ion-input>
-        </ion-item>
-        <div [hidden]="destination.valid || destination.untouched" >
-          <p  *ngIf="destination.errors" color="danger" padding-left>
-            Location is required
-          </p>          
-        </div>
+       
 
         <ion-item>
           <ion-label floating color="favorite">Delivery Time</ion-label>
-          <ion-input (click)="showModal()" [(ngModel)]="gosend.time" name="time" type="text" #time="ngModel" ion-text color="favorite" required>
-          </ion-input>
+          <ion-datetime name="deliverytime" displayFormat="DD/MMM/YYYY" #deliverytime="ngModel" min="2016" max="2018-12-31" [(ngModel)]="transferDate"></ion-datetime>
         </ion-item>
-        <div [hidden]="time.valid || time.untouched" >
-          <p  *ngIf="time.errors" color="danger" padding-left>
+        <div [hidden]="deliverytime.valid || deliverytime.untouched" >
+          <p  *ngIf="deliverytime.errors" color="danger" padding-left>
             Location is required
           </p>          
         </div>
