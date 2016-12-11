@@ -17,7 +17,7 @@
         
         <ion-item>
           <ion-label floating color="favorite">Delivery Location</ion-label>
-          <ion-input (click)="showModal(location)" [(ngModel)]="gofood.location" name="location" type="text" #location="ngModel" ion-text color="favorite" required>
+          <ion-input (focus)="showModal(location)" [(ngModel)]="gofood.location" name="location" type="text" #location="ngModel" ion-text color="favorite" required>
           </ion-input>
         </ion-item>
         <div [hidden]="location.valid || location.untouched" >
@@ -28,7 +28,7 @@
 
          <ion-item>
           <ion-label floating color="favorite">Restuarant Name</ion-label>
-          <ion-input (click)="showModal(destination)" [(ngModel)]="gofood.destination" name="destination" type="text" #destination="ngModel" ion-text color="favorite" required>
+          <ion-input (focus)="showModal(destination)" [(ngModel)]="gofood.destination" name="destination" type="text" #destination="ngModel" ion-text color="favorite" required>
           </ion-input>
         </ion-item>
         <div [hidden]="destination.valid || destination.untouched" >

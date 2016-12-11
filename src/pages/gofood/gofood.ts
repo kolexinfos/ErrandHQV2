@@ -17,6 +17,7 @@ export class GofoodPage {
 
    gofood: {location?: string,weight?:string, quantity?: number, time?: string, destination?: string} = {};
   submitted:boolean = false;
+  transferDate:string;
 
   placesService:any;
   map: any;
@@ -29,7 +30,10 @@ export class GofoodPage {
         set: false,
     };
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {}
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+      let utc = new Date().toJSON().slice(0,10);
+      this.transferDate = utc;
+  }
 
  goFoodRequest(form){
      console.log(form);

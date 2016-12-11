@@ -17,6 +17,7 @@ export class GosendPage {
 
    gosend: {location?: string,weight?:string, quantity?: number, time?: string, destination?: string} = {};
   submitted:boolean = false;
+  transferDate: string;
 
   placesService:any;
   map: any;
@@ -29,7 +30,10 @@ export class GosendPage {
         set: false,
     };
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {}
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+       let utc = new Date().toJSON().slice(0,10);
+      this.transferDate = utc;
+  }
 
  goSendRequest(form){
      console.log(form);
