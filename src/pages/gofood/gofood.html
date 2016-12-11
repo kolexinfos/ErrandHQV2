@@ -1,18 +1,59 @@
-<!--
-  Generated template for the Gofood page.
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>gofood</ion-title>
+  <ion-navbar color="favorite" >
+    <ion-title>GoFood</ion-title>
   </ion-navbar>
-
+  
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="home getstart" >
+  <div id="map"></div>
+  <ion-card>
+  <ion-list>
 
+      <form #gofoodForm="ngForm" novalidate>
+        
+        <ion-item>
+          <ion-label floating color="favorite">Delivery Location</ion-label>
+          <ion-input (click)="showModal(location)" [(ngModel)]="gofood.location" name="location" type="text" #location="ngModel" ion-text color="favorite" required>
+          </ion-input>
+        </ion-item>
+        <div [hidden]="location.valid || location.untouched" >
+          <p  *ngIf="location.errors" color="danger" padding-left>
+            Location is required
+          </p>          
+        </div>   
+
+         <ion-item>
+          <ion-label floating color="favorite">Restuarant Name</ion-label>
+          <ion-input (click)="showModal(destination)" [(ngModel)]="gofood.destination" name="destination" type="text" #destination="ngModel" ion-text color="favorite" required>
+          </ion-input>
+        </ion-item>
+        <div [hidden]="destination.valid || destination.untouched" >
+          <p  *ngIf="destination.errors" color="danger" padding-left>
+            Destination is required
+          </p>          
+        </div> 
+
+        <ion-item>
+          <ion-label floating color="favorite">Delivery Time</ion-label>
+          <ion-datetime name="deliverytime" displayFormat="DD/MMM/YYYY" #deliverytime="ngModel" min="2016" max="2018-12-31" [(ngModel)]="transferDate"></ion-datetime>
+        </ion-item>
+        <div [hidden]="deliverytime.valid || deliverytime.untouched" >
+          <p  *ngIf="deliverytime.errors" color="danger" padding-left>
+            Delivery Time is required
+          </p>          
+        </div>
+
+        
+
+        <div padding>
+          <button ion-button (click)="goFoodRequest(gofoodForm)" type="submit" color="favorite" block>Submit</button>
+        </div>
+
+      </form>
+  </ion-list>
+  </ion-card>
 </ion-content>
